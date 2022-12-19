@@ -5,6 +5,11 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
+      title: 'Rockets',
+      to: '/rockets',
+    },
+    {
+      id: 2,
       title: 'My Profile',
       to: '/profile',
     },
