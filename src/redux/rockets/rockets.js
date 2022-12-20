@@ -6,8 +6,16 @@ const initialState = {
 };
 
 const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
-  const rockets = await RocketService.getAll();
-  return rockets.data;
+  const response = await RocketService.getAll();
+  const rockets = response.data.map((item) => (
+    {
+      rocket_id: item.id,
+      rocket_name: item.rocket_name,
+      rocket_description: item.description,
+      rocket_images: item.flickr_images[0],
+    }
+  ));
+  return rockets;
 });
 
 const rocketsReducer = (state = initialState, action) => {
