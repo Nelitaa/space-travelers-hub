@@ -10,6 +10,11 @@ const Navbar = () => {
     },
     {
       id: 2,
+      title: 'Missions',
+      to: '/missions',
+    },
+    {
+      id: 3,
       title: 'My Profile',
       to: '/profile',
     },
