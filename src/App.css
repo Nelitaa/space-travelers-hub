@@ -89,9 +89,10 @@ a {
   margin: 3% 0 3% 0;
 }
 
-.rocket-button {
+.cancel-rocket-button,
+.reserve-rocket-button {
   background-color: #5c73a2;
-  border: none;
+  border: #5c73a2 solid 1px;
   border-radius: 8px;
   padding: 1% 3% 1% 3%;
   color: #fff;
@@ -107,4 +108,10 @@ a {
   font-size: small;
   margin-right: 3%;
   cursor: pointer;
+}
+
+.cancel-rocket-button {
+  background-color: #fff;
+  border: gray solid 1px;
+  color: gray;
 }
