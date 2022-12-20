@@ -7,9 +7,11 @@ const Rockets = () => {
   const listRockets = rockets.map((rocket) => (
     <Rocket
       key={rocket.rocket_id}
+      id={rocket.rocket_id}
       name={rocket.rocket_name}
       description={rocket.rocket_description}
       image={rocket.rocket_image}
+      reserved={rocket.rocket_reserved}
     />
   ));
 

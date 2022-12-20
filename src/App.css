@@ -97,3 +97,14 @@ a {
   color: #fff;
   cursor: pointer;
 }
+
+.rocket-reserved {
+  background-color: #32b6c4d7;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3%;
+  color: #fff;
+  font-size: small;
+  margin-right: 3%;
+  cursor: pointer;
+}

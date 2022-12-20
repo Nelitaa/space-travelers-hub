@@ -13,9 +13,15 @@ const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
       rocket_name: item.rocket_name,
       rocket_description: item.description,
       rocket_image: item.flickr_images[0],
+      rocket_reserved: item.active,
     }
   ));
   return rockets;
+});
+
+const reserveRocket = (id) => ({
+  type: 'rockets/reserveRocket',
+  payload: id,
 });
 
 const rocketsReducer = (state = initialState, action) => {
@@ -30,5 +36,5 @@ const rocketsReducer = (state = initialState, action) => {
   }
 };
 
-export { fetchRockets };
+export { fetchRockets, reserveRocket };
 export default rocketsReducer;
