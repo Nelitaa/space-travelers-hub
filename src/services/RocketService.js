@@ -1,6 +1,6 @@
 import http from '../http-common';
 
-const getAll = () => http.get('/');
+const getAll = () => http.get('/rockets');
 
 const RocketService = {
   getAll,
