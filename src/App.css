@@ -48,6 +48,8 @@ a {
 
 .links-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 .link-item > a {
@@ -55,6 +57,7 @@ a {
   font-size: 20px;
 }
 
-.link-item > a:hover {
+.link-item > a:hover,
+.link-item > a:focus {
   border-bottom: 4px solid #000;
 }
