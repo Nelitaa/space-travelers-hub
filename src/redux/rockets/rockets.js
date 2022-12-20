@@ -12,7 +12,7 @@ const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
       rocket_id: item.id,
       rocket_name: item.rocket_name,
       rocket_description: item.description,
-      rocket_images: item.flickr_images[0],
+      rocket_image: item.flickr_images[0],
     }
   ));
   return rockets;

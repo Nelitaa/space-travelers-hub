@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 const Rocket = (props) => {
   const { name, description, image } = props;
   return (
-    <li>
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <button type="button">Reserve Rocket</button>
+    <li className="rocket-container">
+      <img className="rocket-image" src={image} alt={name} />
+      <div>
+        <h2>{name}</h2>
+        <p className="rocket-description">{description}</p>
+        <button className="rocket-button" type="button">Reserve Rocket</button>
+      </div>
     </li>
   );
 };
