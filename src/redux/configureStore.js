@@ -1,4 +1,4 @@
-import { configureStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
+import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 import rocketsReducer from './rockets/rockets';
 import missions from './Missions/Missions';
@@ -6,7 +6,7 @@ import missions from './Missions/Missions';
 const store = configureStore({
   reducer: {
     rockets: rocketsReducer,
-    missions
+    missions,
   },
 },
 applyMiddleware(thunk));
