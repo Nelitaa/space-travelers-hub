@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Mission from './Mission';
 
 const MissionsList = () => {
   const missions = useSelector((state) => state.missions);
@@ -17,20 +18,7 @@ const MissionsList = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <tr className="table-row" key={mission.mission_id} id={mission.mission_id}>
-              <td className="table-cell">
-                {mission.mission_name}
-              </td>
-              <td className="table-cell">
-                {mission.description}
-              </td>
-              <td>
-                <p className="table-badge">Active Member</p>
-              </td>
-              <td>
-                <button type="button" className="table-button">Join Mission</button>
-              </td>
-            </tr>
+            <Mission data={mission} key={mission.mission_id} />
           ))}
         </tbody>
       </table>
