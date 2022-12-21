@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../images/planet.png';
 
 const Navbar = () => {
@@ -6,7 +6,7 @@ const Navbar = () => {
     {
       id: 1,
       title: 'Rockets',
-      to: '/rockets',
+      to: '/',
     },
     {
       id: 2,
@@ -19,6 +19,8 @@ const Navbar = () => {
       to: '/profile',
     },
   ];
+  const location = useLocation();
+
   return (
     <header className="header-container">
       <Link to="/" className="brand-container">
@@ -29,7 +31,7 @@ const Navbar = () => {
         <ul className="links-list">
           {links.length > 0
           && links.map((link) => (
-            <li className="link-item" key={link.id}>
+            <li className={`link-item ${link.to === location.pathname ? 'link-item-active' : ''}`} key={link.id}>
               <NavLink to={link.to}>
                 {link.title}
               </NavLink>

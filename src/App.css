@@ -61,6 +61,7 @@ ul {
   font-size: 20px;
 }
 
+.link-item-active,
 .link-item > a:hover,
 .link-item > a:focus {
   border-bottom: 3px solid #5c73a2;
