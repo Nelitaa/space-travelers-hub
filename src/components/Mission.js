@@ -22,15 +22,15 @@ const Mission = ({ data }) => {
       <td className="table-cell">
         {description}
       </td>
-      <td>
+      <td className="table-cell">
         {
           reserved
-            ? <p className="table-badge blue-badge">Active Member</p>
+            ? <p className="table-badge badge-blue">Active Member</p>
             : <p className="table-badge">NOT A MEMBER</p>
         }
       </td>
-      <td>
-        <button type="button" className={reserved ? 'mission-button-cancel' : 'mission-button'} onClick={handleClick}>
+      <td className="table-cell">
+        <button type="button" className={reserved ? 'mission-button button-cancel' : 'mission-button'} onClick={handleClick}>
           { reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
