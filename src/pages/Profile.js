@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import MyMissions from '../components/MyMissions';
 
 const Profile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
@@ -16,6 +17,7 @@ const Profile = () => {
           ))}
         </ul>
       </section>
+      <MyMissions />
     </div>
   );
 };
