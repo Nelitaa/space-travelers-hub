@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .header-container {
   position: sticky;
   left: 0;
@@ -59,7 +63,8 @@ a {
 
 .link-item > a:hover,
 .link-item > a:focus {
-  border-bottom: 4px solid #000;
+  border-bottom: 3px solid #5c73a2;
+  color: #5c73a2;
 }
 
 .rockets-container {
@@ -67,6 +72,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  background-color: #f2f2f2;
 }
 
 .rocket-container {
@@ -77,6 +83,7 @@ a {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px;
   margin-bottom: 5%;
+  background-color: #fff;
 }
 
 .rocket-image {
@@ -183,4 +190,24 @@ tr:nth-child(even) {
 .button-cancel {
   color: #df4553;
   border-color: #df4553;
+.my-rockets-container {
+  padding: 3%;
+}
+
+.rocket-reserved-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px;
+  max-width: 50%;
+  margin-top: 1%;
+  background-color: #fff;
+}
+
+.rockets-reserved {
+  padding: 3%;
+}
+
+.profile-container {
+  background-color: #f2f2f2;
 }
