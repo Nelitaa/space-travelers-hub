@@ -190,6 +190,8 @@ tr:nth-child(even) {
 .button-cancel {
   color: #df4553;
   border-color: #df4553;
+}
+
 .my-rockets-container {
   padding: 3%;
 }
