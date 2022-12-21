@@ -6,11 +6,11 @@ const Profile = () => {
 
   return (
     <div className="profile-container">
-      <section>
+      <section className="my-rockets-container">
         <h1>My Rockets</h1>
-        <ul>
+        <ul className="rocket-reserved-container">
           {rockets.filter((rocket) => rocket.rocket_reserved).map((rocket) => (
-            <li key={rocket.rocket_id}>
+            <li key={rocket.rocket_id} className="rockets-reserved">
               {rocket.rocket_name}
             </li>
           ))}

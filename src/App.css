@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .header-container {
   position: sticky;
   left: 0;
@@ -114,4 +118,21 @@ a {
   background-color: #fff;
   border: gray solid 1px;
   color: gray;
+}
+
+.my-rockets-container {
+  padding: 3%;
+}
+
+.rocket-reserved-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px;
+  max-width: 50%;
+  margin-top: 1%;
+}
+
+.rockets-reserved {
+  padding: 3%;
 }
