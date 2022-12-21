@@ -115,3 +115,72 @@ a {
   border: gray solid 1px;
   color: gray;
 }
+
+.missions-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.missions-title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.missions-content {
+  margin: 12px auto;
+  padding: 24px;
+  border: 1px solid #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+.table-header {
+  background-color: #000;
+}
+
+.table-title {
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 12px;
+}
+
+.table-cell {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+.table-badge {
+  background-color: #6d757d;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+}
+
+.badge-blue {
+  background-color: #18a2b8;
+}
+
+.mission-button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-cancel {
+  color: #df4553;
+  border-color: #df4553;
+}
