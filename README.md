@@ -28,9 +28,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Space_Travelers'_Hub] <a name="about-project"></a>
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-**[Space_Travelers'_Hub]** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space mission.
+**Space Travelers' Hub** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space mission.
 
 ## 🛠 Built With <a name="built-with"></a>
 
